@@ -4,7 +4,7 @@ const { TextControl } = wp.components;
 import './editor.scss';
 
 export default function Edit(props) {
-	const blockProps = useBlockProps();
+  const blockProps = useBlockProps();
   const { setAttributes } = props;
   const { title, author, summary } = props.attributes;
 
@@ -19,7 +19,7 @@ export default function Edit(props) {
   };
 
   return (
-		<div { ...blockProps }>
+    <div {...blockProps}>
       <TextControl
         label="Title"
         value={title}
@@ -38,6 +38,6 @@ export default function Edit(props) {
         onChange={onChangeSummary}
         allowedFormats={['core/bold', 'core/italic']}
       />
-		</div>
+    </div>
   );
 }

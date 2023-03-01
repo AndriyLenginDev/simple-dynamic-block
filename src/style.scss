@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.book {
+  &__wrapper {
+	padding: 2em;
+	background-color: #f0f0f1;
+  }
+  &__title {
+	margin-top: 0;
+  }
+  &__author {
+	color: #c1c1c1;
+  }
+  &__summary {
+	margin-bottom: 0;
+  }
+}
